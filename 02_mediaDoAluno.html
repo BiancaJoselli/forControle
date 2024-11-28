@@ -8,9 +8,18 @@
 
     //ENTRADA
     
+    const quantidadeNotas = Number(prompt("Informe quantas notas o aluno obteve: "));
+    let somaNotas = 0;
 
     //PROCESSAMENTO
     
+    for (let contador = 1; contador <= quantidadeNotas; contador++) {
+        const notas = Number(prompt(`Informe a nota ${contador}.`));
+        somaNotas = notas + somaNotas;
+
+    }
+
+    document.write("A média é: " + parseFloat( somaNotas / quantidadeNotas));
 
     //SAÍDA
 
