@@ -8,9 +8,22 @@
 
     //ENTRADA
 
+    let lista = [];
+    
     
     //PROCESSAMENTO
 
+    for (let contador = 1; contador <= 5; contador++) {
+        const numero = Number(prompt(`Informe a ${contador}° número.`));
+        lista.push(numero);
+        lista.sort((a, b) => a - b);
+        
+
+    }
+
+    let maiorNumero = lista.slice(-1);
+
+    document.write(`O maior número é: ${maiorNumero}.`);
     
     //SAÍDA
 
