@@ -7,9 +7,27 @@
 
     //ENTRADA
 
+    const numero = Number(prompt("Informe um número:"));
+    let listaPrimo = [];
 
     //PROCESSAMENTO
 
+    for (let contador = 1; contador <= numero; contador++) {
+
+        if (numero != 1 && numero % contador == 0) {
+
+            listaPrimo.push(numero);
+
+        } 
+
+    }
+
+    if ( listaPrimo.length == 2) {
+        document.write(`O número é primo!`);
+
+    } else {
+        document.write(`O número não é primo!`);
+    }
 
     //SAÍDA
 
