@@ -7,10 +7,23 @@
 
     //ENTRADA
 
+    let soma = 0;
+
+    let media = 0;
 
     //PROCESSAMENTO
+    for (let contador = 1; contador <= 5; contador++) {
+        const numero = Number(prompt(`Informe o ${contador}° número`));
+
+        soma = numero + soma;
+
+        media = contador;
+
+    }
+
 
 
     //SAÍDA
+    document.write("Média: " + (soma / media) + "<br> Soma:" + soma);
 
 </script>
