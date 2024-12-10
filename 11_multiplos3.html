@@ -6,8 +6,27 @@
 
     //ENTRADA
 
+    let multiplos = [];
+
+    let soma = 0;
+
 
     //PROCESSAMENTO
+
+    for (let contador = 1; contador <= 100; contador++ ) {
+        
+        
+        if ( contador % 3 == 0 ) {
+
+        multiplos.push(contador);
+
+        soma += contador;
+
+        }
+    }
+
+    document.write(`Múltiplos de 3: <br> ${multiplos} <br> `);
+    document.write(`Soma dos múltiplos: <br> ${soma}`);
 
 
     //SAÍDA
