@@ -9,19 +9,18 @@
 
     let investimento = 1000;
     const objetivo = 2000;
-    let contador = 0;
+    let contador = 1;
 
     //PROCESSAMENTO
 
-    for (; investimento < objetivo; contador++) {
+    for (contador; investimento < objetivo; contador++) {
         investimento *= 1.02;
 
     }
 
     //SAÍDA
 
-    document.write(`A quantidade de dias que demorará para que Joãozinho 
-    consiga o total de R$ 2.000,00 é: ${contador}`);
+    document.write(`Demorará: ${contador} dias.`);
 
 
 
