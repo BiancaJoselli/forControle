@@ -13,22 +13,23 @@
 
     //PROCESSAMENTO
 
-    for (let contador = 1; contador <= 100; contador++ ) {
-        
-        
-        if ( contador % 3 == 0 ) {
+    for (let contador = 1; contador <= 100; contador++) {
 
-        multiplos.push(contador);
 
-        soma += contador;
+        if (contador % 3 == 0) {
+
+            multiplos.push(contador);
+
+            soma += contador;
 
         }
     }
 
+
+    //SAÍDA
+
     document.write(`Múltiplos de 3: <br> ${multiplos} <br> `);
     document.write(`Soma dos múltiplos: <br> ${soma}`);
 
-
-    //SAÍDA
 
 </script>
